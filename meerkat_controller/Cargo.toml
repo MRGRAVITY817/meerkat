@@ -1,0 +1,19 @@
+[package]
+name = "meerkat_controller"
+version = "0.1.0"
+license = "MIT"
+description = "Controller proc macros for internal use in `meercat`"
+repository = "https://github.com/MRGRAVITY817/meerkat"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.5.6"
+proc-macro2 = "1.0.39"
+quote = "1.0.18"
+syn = "1.0.96"
+tokio = { version = "1.19.1", features = ["full"] }
+
+[lib]
+proc-macro = true

@@ -1,9 +1,19 @@
 [package]
 name = "meerkat"
 version = "0.1.0"
+license = "MIT"
+description = "Meerkat ain't cat."
+repository = "https://github.com/MRGRAVITY817/meerkat"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+name = "meerkat"
+path = "src/lib.rs"
+
+[workspace]
+members = [".", "meerkat_controller"]
+
 [dependencies]
-axum = "0.5"
+
