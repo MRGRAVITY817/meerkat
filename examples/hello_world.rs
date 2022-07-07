@@ -1,3 +1,4 @@
 use meerkat::*;
 
-fn main() {}
+fn main() {
+}
